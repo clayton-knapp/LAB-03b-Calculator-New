@@ -64,6 +64,7 @@ footer {
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
+    margin: 0px;
 }
 
 .gutter-right {
@@ -113,15 +114,16 @@ footer {
   }
 
   .operation {
-      /* display: flex;
-      justify-content: center;
-      width: 800px; */
+      display: flex;
+      align-items:center;
+      flex-direction: column;
+
       border: solid black 1px;
       margin: 20px;
       padding: 20px;
   }
 
   .button {
-      width: 150px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
   }

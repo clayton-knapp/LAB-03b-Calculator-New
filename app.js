@@ -5,25 +5,15 @@ import { subtract } from './math-utils.js';
 import { multiply } from './math-utils.js';
 import { divide } from './math-utils.js';
 
-const addend1 = document.getElementById('addend1');
-const addend2 = document.getElementById('addend2');
+const input1 = document.getElementById('input1');
+const input2 = document.getElementById('input2');
+
 const addButton = document.getElementById('add-button');
-const sumDisplay = document.getElementById('sum');
-
-const minuend = document.getElementById('minuend');
-const subtrahend = document.getElementById('subtrahend');
 const subtractButton = document.getElementById('subtract-button');
-const differenceDisplay = document.getElementById('difference');
-
-const multiplicand = document.getElementById('multiplicand');
-const multiplier = document.getElementById('mulitplier');
 const multiplyButton = document.getElementById('multiply-button');
-const productDisplay = document.getElementById('product');
-
-const dividend = document.getElementById('dividend');
-const divisor = document.getElementById('divisor');
 const divideButton = document.getElementById('divide-button');
-const quotientDisplay = document.getElementById('quotient');
+
+const resultDisplay = document.getElementById('result-display');
 
 
 // initialize state
@@ -31,21 +21,20 @@ const quotientDisplay = document.getElementById('quotient');
 // set event listeners 
 
 addButton.addEventListener('click', () =>{
-  const sum = add(addend1.valueAsNumber, addend2.valueAsNumber);
-  sumDisplay.textContent = sum;
+  // checkNumbers();
+  resultDisplay.textContent = add(input1.valueAsNumber, input2.valueAsNumber);
 });
 
 subtractButton.addEventListener('click', () =>{
-  const difference = subtract(minuend.valueAsNumber, subtrahend.valueAsNumber);
-  differenceDisplay.textContent = difference;
+  resultDisplay.textContent = subtract(input1.valueAsNumber, input2.valueAsNumber);
 });
 
 multiplyButton.addEventListener('click', () =>{
-  productDisplay.textContent = multiply(multiplicand.valueAsNumber, multiplier.valueAsNumber);
+  resultDisplay.textContent = multiply(input1.valueAsNumber, input2.valueAsNumber);
 });
 
 divideButton.addEventListener('click', () =>{
-  quotientDisplay.textContent = divide(dividend.valueAsNumber, divisor.valueAsNumber);
+  resultDisplay.textContent = divide(input1.valueAsNumber, input2.valueAsNumber);
 });
 
 

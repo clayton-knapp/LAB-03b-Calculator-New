@@ -20,3 +20,7 @@ export function divide(dividend, divisor){
         return 'undefined';
     };
 };
+
+// export function checkNumbers(input1, input2){
+
+// }

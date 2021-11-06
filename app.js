@@ -4,6 +4,7 @@ import { add } from './math-utils.js';
 import { subtract } from './math-utils.js';
 import { multiply } from './math-utils.js';
 import { divide } from './math-utils.js';
+import { checkNumbers } from './math-utils.js';
 
 const input1 = document.getElementById('input1');
 const input2 = document.getElementById('input2');
@@ -21,19 +22,22 @@ const resultDisplay = document.getElementById('result-display');
 // set event listeners 
 
 addButton.addEventListener('click', () =>{
-  // checkNumbers();
+  checkNumbers(input1.value.length, input2.value.length);
   resultDisplay.textContent = add(input1.valueAsNumber, input2.valueAsNumber);
 });
 
 subtractButton.addEventListener('click', () =>{
+  checkNumbers(input1.value.length, input2.value.length);
   resultDisplay.textContent = subtract(input1.valueAsNumber, input2.valueAsNumber);
 });
 
 multiplyButton.addEventListener('click', () =>{
+  checkNumbers(input1.value.length, input2.value.length);
   resultDisplay.textContent = multiply(input1.valueAsNumber, input2.valueAsNumber);
 });
 
 divideButton.addEventListener('click', () =>{
+  checkNumbers(input1.value.length, input2.value.length);
   resultDisplay.textContent = divide(input1.valueAsNumber, input2.valueAsNumber);
 });
 

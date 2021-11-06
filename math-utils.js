@@ -21,6 +21,12 @@ export function divide(dividend, divisor){
     };
 };
 
-// export function checkNumbers(input1, input2){
 
-// }
+//checks to see if numbers are inputed - shows alert if user doesnt put in a number
+
+export function checkNumbers(input1, input2){
+    if (input1 === 0 || input2 === 0) {
+        alert("Must input 2 numbers!");
+
+    };
+};

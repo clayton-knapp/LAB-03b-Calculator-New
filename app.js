@@ -36,8 +36,6 @@ const equalButton = document.getElementById('equal-button');
 
 const resultDisplay = document.getElementById('result-display');
 
-let memory1 = 99;
-let memory2 = 999;
 
 // initialize state
 
@@ -48,38 +46,79 @@ clearButton.addEventListener('click', () => {
 });
 
 sevenButton.addEventListener('click', () => {
-    let memory1 = 7;
-    input.value = memory1;
-    resultDisplay.textContent = memory1;
-    // let memory2 = 7;
-    
+    input.value += sevenButton.innerText;
 });
 
 eightButton.addEventListener('click', () => {
-    let memory2 = 8;
-     input.value = memory2;
-    resultDisplay.textContent = memory2;
-    
+    input.value += eightButton.innerText;  
 });
 
-// nineButton.addEventListener('click', () => {
-//     resultDisplay.textContent = "9";
-//     input.value = 9;
-//     let memory1 = 9;
-//     let memory2 = 9;
-    
-// });
+nineButton.addEventListener('click', () => {
+    input.value += nineButton.innerText;
+});
+
+
+fourButton.addEventListener('click', () => {
+    input.value += fourButton.innerText;
+});
+
+fiveButton.addEventListener('click', () => {
+    input.value += fiveButton.innerText;  
+});
+
+sixButton.addEventListener('click', () => {
+    input.value += sixButton.innerText;
+});
+
+
+threeButton.addEventListener('click', () => {
+    input.value += threeButton.innerText;
+});
+
+twoButton.addEventListener('click', () => {
+    input.value += twoButton.innerText;  
+});
+
+oneButton.addEventListener('click', () => {
+    input.value += oneButton.innerText;
+});
+
+zeroButton.addEventListener('click', () => {
+    input.value += zeroButton.innerText;
+});
+
+decimalButton.addEventListener('click', () => {
+    input.value += decimalButton.innerText;  
+});
+
+posNegButton.addEventListener('click', () => {
+    input.value += "-";
+});
 
 
 addButton.addEventListener('click', () =>{
-    let operation = "add";
-    input.value = "";
+    input.value += addButton.innerText;
+});
+
+divideButton.addEventListener('click', () =>{
+    input.value += divideButton.innerText;
+});
+
+multiplyButton.addEventListener('click', () =>{
+    input.value += multiplyButton.innerText;
+});
+
+subtractButton.addEventListener('click', () =>{
+    input.value += subtractButton.innerText;
 });
 
 equalButton.addEventListener('click', () =>{
     // if (operation === "add") {
-      let result = memory1 + memory2;
-      input.value = result;
+    input.value = eval(input.value);
+      // let result = memory1 + memory2;
+      // console.log(result);
+      // input.value = result.valueAsNumber;
+      
     // };
 });
 

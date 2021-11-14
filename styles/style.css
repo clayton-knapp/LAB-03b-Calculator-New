@@ -82,7 +82,7 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -93,10 +93,10 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
-  
-  @keyframes pulse {
+
+@keyframes pulse {
     20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+    transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
     }
 
     40% {
@@ -105,48 +105,48 @@ footer {
 
     60% {
         transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
+    }
 
     80% {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
 
-  }
+}
 
-  .operation {
-      display: flex;
-      align-items:center;
-      flex-direction: column;
+.operation {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
 
-      border: solid black 1px;
-      margin: 20px;
-      padding: 20px;
-      border-radius: 20px;
-      box-shadow: 10px 10px rgb(17, 5, 148);
-  }
+    border: solid black 1px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px rgb(17, 5, 148);
+}
 
-  .button {
-      width: 90%;
-      height: 90%;
+.button {
+    width: 90%;
+    height: 90%;
       /* border-radius: 100%; */
-      box-shadow: 5px, 5px, red
-  }
+    box-shadow: 5px, 5px, red
+}
 
-  .button div {
-      width: 100%;
-      height: 100%;
+.button div {
+    width: 100%;
+    height: 100%;
         box-shadow: 5px, 5px, red
-  }
+}
 
-  .button-grid {
-      display: grid;
-      width: 200px;
-      height: 250px;
-      /* grid-template-rows: 40px 40px 40px 40px 40px 40px;
+.button-grid {
+    display: grid;
+    width: 200px;
+    height: 250px;
+    /* grid-template-rows: 40px 40px 40px 40px 40px 40px;
       grid-template-columns: 40px 40px 40px 40px; */
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
 input {
     width: 100%;
